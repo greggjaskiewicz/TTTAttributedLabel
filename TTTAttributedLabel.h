@@ -61,7 +61,9 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
 
 // Override UILabel @property to accept both NSString and NSAttributedString
 @protocol TTTAttributedLabel <NSObject>
+
 @property (nonatomic, copy) id text;
+
 @end
 
 /**
@@ -198,7 +200,7 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
 /**
  A copy of the label's current attributedText. This returns `nil` if an attributed string has never been set on the label.
  */
-@property (readwrite, nonatomic, copy) NSAttributedString *attributedText;
+@property (nonatomic, copy) NSAttributedString *attributedText;
 
 ///-------------------
 /// @name Adding Links
